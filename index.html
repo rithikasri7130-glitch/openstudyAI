@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenStudy AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <aside class="sidebar">
+    <h2>✦ OpenStudy <span>AI</span></h2>
+    <p class="label">WORKSPACE</p>
+    <button class="nav active" data-mode="ask">✧ Ask AI</button>
+    <button class="nav" data-mode="summary">▤ Summarize Notes</button>
+    <button class="nav" data-mode="quiz">◈ Generate Quiz</button>
+    <p class="bottom">● Open-weight AI learning</p>
+  </aside>
+
+  <main class="main">
+    <header>
+      <span class="tag">AI LEARNING ASSISTANT</span>
+      <span class="avatar">S</span>
+    </header>
+
+    <section class="hero">
+      <p class="label">YOUR PERSONAL AI TUTOR</p>
+      <h1>Learn smarter.<br><span>Not harder.</span></h1>
+      <p class="description">
+        Upload your study notes, understand difficult concepts
+        and prepare for exams with your AI learning assistant.
+      </p>
+    </section>
+
+    <section class="cards">
+      <div class="card">
+        <p class="label">STEP 01</p>
+        <h3>Upload your notes</h3>
+        <label class="upload" for="pdf">
+          <span class="upload-icon">↑</span>
+          <strong>Choose a PDF file</strong>
+          <small>Upload your study material</small>
+        </label>
+        <input id="pdf" type="file" accept=".pdf,application/pdf">
+        <p id="filename" class="small">No file selected</p>
+      </div>
+
+      <div class="card">
+        <p class="label">STEP 02</p>
+        <h3 id="heading">Ask your AI tutor</h3>
+        <label for="question">Your question</label>
+        <textarea id="question"
+          placeholder="Ask something about your notes..."></textarea>
+        <div class="buttons">
+          <button class="secondary" id="summary">Summarize</button>
+          <button class="secondary" id="quiz">Make a quiz</button>
+          <button class="primary" id="ask">Ask AI ↗</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card result-card">
+      <p class="label">YOUR LEARNING SPACE</p>
+      <h3>AI response</h3>
+      <div id="response" aria-live="polite">
+        <span class="sparkle">✧</span>
+        <p>Your learning journey starts here.</p>
+        <small>Upload your notes and enter a question to begin.</small>
+      </div>
+    </section>
+
+    <footer>OpenStudy AI · Learn. Understand. Grow.</footer>
+    <section class="card result-card">
+  <h3>AI Response</h3>
+  <p id="status">Ready to help you learn.</p>
+  <div id="response">Your answer will appear here.</div>
+</section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
